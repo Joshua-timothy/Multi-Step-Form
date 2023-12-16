@@ -3,20 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  body {
-    @apply bg-CWhite font-Inter;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-    background-color: #1b14298a;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #ffffff; /* color of the thumb */
-    border-radius: 10px; /* rounded corners */
-  }
-}
-
