@@ -15,51 +15,102 @@
   </head>
   <body>
     <main>
-      <section>
-        <div>
-          <div>
-            <ol>
-              <li>
-                <span>STEP 1</span>
-                YOUR INFO
+      <section class="grid h-screen place-content-center">
+        <div class="flex rounded-xl bg-white p-3 shadow-xl">
+          <div class="s-bar rounded-xl bg-PurplishBlue py-6 pl-6 pr-20">
+            <ol class="text-sm text-DWhite">
+              <li class="mb-4 flex items-center gap-3">
+                <span
+                  class="grid h-7 w-7 place-content-center rounded-full border border-PastelBlue text-center"
+                  >1</span
+                >
+                <div>
+                  <span class="block text-sm text-LightGray">STEP 1</span>
+                  <span class="font-semibold"> YOUR INFO </span>
+                </div>
               </li>
-              <li>
-                <span>STEP 2</span>
-                SELECT PLAN
+              <li class="mb-4 flex items-center gap-3">
+                <span
+                  class="grid h-7 w-7 place-content-center rounded-full border border-PastelBlue text-center"
+                  >2</span
+                >
+                <div>
+                  <span class="block text-LightGray">STEP 2</span>
+                  <span class="font-semibold"> SELECT PLAN </span>
+                </div>
               </li>
-              <li>
-                <span>STEP 3</span>
-                ADDS-ONS
+              <li class="mb-4 flex items-center gap-3">
+                <span
+                  class="grid h-7 w-7 place-content-center rounded-full border border-PastelBlue"
+                  >3</span
+                >
+                <div>
+                  <span class="block text-LightGray">STEP 3</span>
+                  <span class="font-semibold"> ADDS-ONS </span>
+                </div>
               </li>
-              <li>
-                <span>STEP 4</span>
-                SUMMARY
+              <li class="flex items-center gap-2">
+                <span
+                  class="grid h-7 w-7 place-content-center rounded-full border border-PastelBlue text-center"
+                  >4</span
+                >
+                <div>
+                  <span class="block text-LightGray">STEP 4</span>
+                  <span class="font-semibold"> SUMMARY </span>
+                </div>
               </li>
             </ol>
           </div>
-          <div>
-            <header>
-              <h1>Personal info</h1>
-              <p>Please provide your name, email address, and phone number.</p>
+          <div class="relative px-20 pb-32 pt-10">
+            <header class="mb-6">
+              <h1 class="mb-1 text-3xl font-bold text-MarineBlue">
+                Personal info
+              </h1>
+              <p class="text-base text-CoolGray">
+                Please provide your name, email address, and phone number.
+              </p>
             </header>
-            <form action="">
-              <div>
-                <label for="Name">Name</label>
-                <input type="text" placeholder="e.g Joshua Timothy" required />
-              </div>
-              <div>
-                <label for="Email">Email Address</label>
+            <form class="font-base" action="">
+              <div class="mb-4">
+                <label class="mb-1 block text-MarineBlue" for="Name"
+                  >Name</label
+                >
                 <input
+                  class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
+                  type="text"
+                  id="name"
+                  placeholder="e.g Joshua Timothy"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label class="mb-1 block text-MarineBlue" for="Email"
+                  >Email Address</label
+                >
+                <input
+                  class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
                   type="email"
                   placeholder="e.g joshuatimothy.dev@gmail.com"
                   required
                 />
               </div>
               <div>
-                <label for="Nmber">Phone Number</label>
-                <input type="text" placeholder="e.g +1 234 567 890" />
+                <label class="mb-1 block text-MarineBlue" for="Nmber"
+                  >Phone Number</label
+                >
+                <input
+                  class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
+                  type="text"
+                  placeholder="e.g +1 234 567 890"
+                />
               </div>
-              <button>Next step</button>
+              <div class="w-full">
+                <button
+                  class="absolute bottom-0 right-20 -translate-y-2 rounded-md bg-MarineBlue px-6 py-2 text-white transition-opacity hover:opacity-90"
+                >
+                  Next step
+                </button>
+              </div>
             </form>
           </div>
         </div>
