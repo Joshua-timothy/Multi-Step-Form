@@ -61,57 +61,68 @@
               </li>
             </ol>
           </div>
-          <div class="relative px-20 pb-32 pt-10">
-            <header class="mb-6">
-              <h1 class="mb-1 text-3xl font-bold text-MarineBlue">
-                Personal info
-              </h1>
-              <p class="text-base text-CoolGray">
-                Please provide your name, email address, and phone number.
-              </p>
-            </header>
-            <form class="font-base" action="">
-              <div class="mb-4">
-                <label class="mb-1 block text-MarineBlue" for="Name"
-                  >Name</label
-                >
-                <input
-                  class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
-                  type="text"
-                  id="name"
-                  placeholder="e.g Joshua Timothy"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <label class="mb-1 block text-MarineBlue" for="Email"
-                  >Email Address</label
-                >
-                <input
-                  class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
-                  type="email"
-                  placeholder="e.g joshuatimothy.dev@gmail.com"
-                  required
-                />
-              </div>
+          <div class="flex flex-col justify-between gap-y-28 px-20 pt-10">
+            <div>
               <div>
-                <label class="mb-1 block text-MarineBlue" for="Nmber"
-                  >Phone Number</label
-                >
-                <input
-                  class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
-                  type="text"
-                  placeholder="e.g +1 234 567 890"
-                />
+                <header class="mb-6">
+                  <h1 class="mb-1 text-3xl font-bold text-MarineBlue">
+                    Personal info
+                  </h1>
+                  <p class="text-base text-CoolGray">
+                    Please provide your name, email address, and phone number.
+                  </p>
+                </header>
+                <form class="font-base" action="">
+                  <div class="mb-4">
+                    <label class="mb-1 block text-MarineBlue" for="Name"
+                      >Name</label
+                    >
+                    <input
+                      class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
+                      type="text"
+                      id="name"
+                      placeholder="e.g Joshua Timothy"
+                      required
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label class="mb-1 block text-MarineBlue" for="Email"
+                      >Email Address</label
+                    >
+                    <input
+                      class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
+                      type="email"
+                      placeholder="e.g joshuatimothy.dev@gmail.com"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="mb-1 block text-MarineBlue" for="Nmber"
+                      >Phone Number</label
+                    >
+                    <input
+                      class="w-full rounded-md border p-2 font-semibold text-MarineBlue outline-none placeholder:font-normal focus-within:border-PurplishBlue"
+                      type="text"
+                      placeholder="e.g +1 234 567 890"
+                    />
+                  </div>
+                </form>
               </div>
-              <div class="w-full">
-                <button
-                  class="absolute bottom-0 right-20 -translate-y-2 rounded-md bg-MarineBlue px-6 py-2 text-white transition-opacity hover:opacity-90"
-                >
-                  Next step
-                </button>
-              </div>
-            </form>
+            </div>
+            <div
+              class="grid w-full -translate-y-2 grid-flow-col place-content-between"
+            >
+              <button
+                class="invisible font-semibold text-CoolGray transition-colors hover:text-MarineBlue"
+              >
+                Go back
+              </button>
+              <button
+                class="rounded-md bg-MarineBlue px-6 py-2 text-white transition-opacity hover:opacity-90"
+              >
+                Next step
+              </button>
+            </div>
           </div>
         </div>
       </section>
