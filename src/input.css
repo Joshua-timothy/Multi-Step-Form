@@ -15,4 +15,16 @@
     background-image: url("../assets/images/bg-sidebar-desktop.svg");
     background-size: cover;
   }
+
+  #pao-checkbox:checked ~ .pao-checkbox {
+    @apply border-PurplishBlue bg-Alabaster;
+  }
+
+  #pao-checkbox-2:checked ~ .pao-checkbox-2 {
+    @apply border-PurplishBlue bg-Alabaster;
+  }
+
+  #pao-checkbox-3:checked ~ .pao-checkbox-3 {
+    @apply border-PurplishBlue bg-Alabaster;
+  }
 }
