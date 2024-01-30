@@ -13,56 +13,67 @@
     <title>Frontend Mentor | Multi-step form</title>
     <link rel="stylesheet" href="./dist/styles.css" />
   </head>
-  <body>
+  <body class="relative">
     <main>
-      <section class="grid h-screen place-content-center">
-        <div class="flex rounded-xl bg-white p-3 shadow-xl">
-          <div class="s-bar rounded-xl bg-PurplishBlue py-6 pl-6 pr-20">
-            <ol class="text-sm text-DWhite">
-              <li class="mb-4 flex items-center gap-3">
+      <section class="h-screen place-content-center lg:grid">
+        <div class="rounded-xl lg:flex lg:bg-white lg:p-3 lg:shadow-xl">
+          <!--/ #######  PROGRESS BAR ######## / -->
+          <div
+            class="sb-desktop sb-mobile flex min-h-[20vh] items-center justify-center bg-PurplishBlue py-6 lg:block lg:min-h-0 lg:rounded-xl lg:pl-6 lg:pr-20"
+          >
+            <ol
+              class="flex -translate-y-5 gap-x-5 text-sm text-DWhite lg:block lg:-translate-y-0"
+            >
+              <li class="flex items-center gap-3 lg:mb-4">
                 <span
-                  class="grid h-7 w-7 place-content-center rounded-full border border-PastelBlue text-center"
+                  class="grid h-10 w-10 place-content-center rounded-full border border-PastelBlue text-center lg:h-7 lg:w-7"
                   >1</span
                 >
-                <div>
+                <div class="hidden lg:block">
                   <span class="block text-sm text-LightGray">STEP 1</span>
                   <span class="font-semibold"> YOUR INFO </span>
                 </div>
               </li>
-              <li class="mb-4 flex items-center gap-3">
+              <li class="flex items-center gap-3 lg:mb-4">
                 <span
-                  class="grid h-7 w-7 place-content-center rounded-full border border-PastelBlue text-center"
+                  class="grid h-10 w-10 place-content-center rounded-full border border-PastelBlue text-center lg:h-7 lg:w-7"
                   >2</span
                 >
-                <div>
+                <div class="hidden lg:block">
                   <span class="block text-LightGray">STEP 2</span>
                   <span class="font-semibold"> SELECT PLAN </span>
                 </div>
               </li>
-              <li class="mb-4 flex items-center gap-3">
+              <li class="flex items-center gap-3 lg:mb-4">
                 <span
-                  class="grid h-7 w-7 place-content-center rounded-full border border-PastelBlue"
+                  class="grid h-10 w-10 place-content-center rounded-full border border-PastelBlue lg:h-7 lg:w-7"
                   >3</span
                 >
-                <div>
+                <div class="hidden lg:block">
                   <span class="block text-LightGray">STEP 3</span>
                   <span class="font-semibold"> ADDS-ONS </span>
                 </div>
               </li>
               <li class="flex items-center gap-2">
                 <span
-                  class="grid h-7 w-7 place-content-center rounded-full border border-PastelBlue text-center"
+                  class="grid h-10 w-10 place-content-center rounded-full border border-PastelBlue text-center lg:h-7 lg:w-7"
                   >4</span
                 >
-                <div>
+                <div class="hidden lg:block">
                   <span class="block text-LightGray">STEP 4</span>
                   <span class="font-semibold"> SUMMARY </span>
                 </div>
               </li>
             </ol>
           </div>
-          <div class="flex flex-col justify-between gap-y-28 px-20 pt-10">
-            <div class="relative">
+          <!--/ #######  END ######## / -->
+
+          <div
+            class="flex flex-col justify-between lg:gap-y-28 lg:px-20 lg:pt-10"
+          >
+            <div
+              class="relative m-4 -translate-y-14 rounded-xl bg-white p-7 shadow-lg lg:m-0 lg:-translate-y-0 lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none"
+            >
               <!--/ ####### STEP 1 ######## / -->
               <div class="">
                 <header class="mb-6">
@@ -112,7 +123,7 @@
               <!--/ ####### END ######## / -->
 
               <!--/ ####### STEP 2 ######## / -->
-              <div class="invisible absolute top-0 w-full">
+              <div class="invisible absolute top-0 lg:w-full">
                 <header class="mb-6">
                   <h1 class="mb-1 text-3xl font-bold text-MarineBlue">
                     Select your plan
@@ -121,14 +132,17 @@
                     You have the option to monthly or yearly billing.
                   </p>
                 </header>
-                <div class="mb-6 flex justify-between gap-x-3">
+                <div
+                  class="mb-6 flex flex-col justify-between gap-3 lg:flex-row"
+                >
+                  <!-- [########## ARCADE PLAN ##########] -->
                   <div
-                    class="h-auto w-[33%] cursor-pointer rounded-lg border border-PurplishBlue bg-Alabaster p-4 transition-colors hover:border-PurplishBlue"
+                    class="flex h-auto cursor-pointer gap-x-5 rounded-lg border border-PurplishBlue bg-Alabaster p-4 transition-colors hover:border-PurplishBlue lg:block lg:w-[33%]"
                   >
                     <img
                       src="./assets/images/icon-arcade.svg"
                       alt="icon-arcade"
-                      class="mb-8 w-11"
+                      class="w-11 lg:mb-8"
                     />
                     <div>
                       <div>
@@ -142,13 +156,16 @@
                       </div>
                     </div>
                   </div>
+                  <!-- [########## END ##########] -->
+
+                  <!-- [########## ADVANCED PLAN ##########] -->
                   <div
-                    class="w-[33%] cursor-pointer rounded-lg border p-4 transition-colors hover:border-PurplishBlue"
+                    class="flex cursor-pointer gap-x-5 rounded-lg border p-4 transition-colors hover:border-PurplishBlue lg:block lg:w-[33%]"
                   >
                     <img
                       src="./assets/images/icon-advanced.svg"
                       alt="icon-advanced"
-                      class="mb-8 w-11"
+                      class="w-11 lg:mb-8"
                     />
                     <div>
                       <div>
@@ -162,13 +179,16 @@
                       </div>
                     </div>
                   </div>
+                  <!-- [########## END ##########] -->
+
+                  <!-- [########## PRO PLAN ##########] -->
                   <div
-                    class="w-[33%] cursor-pointer rounded-lg border p-4 transition-colors hover:border-PurplishBlue"
+                    class="flex cursor-pointer gap-x-5 rounded-lg border p-4 transition-colors hover:border-PurplishBlue lg:block lg:w-[33%]"
                   >
                     <img
                       src="./assets/images/icon-pro.svg"
                       alt="icon-pro"
-                      class="mb-8 w-11"
+                      class="w-11 lg:mb-8"
                     />
                     <div>
                       <div>
@@ -182,10 +202,11 @@
                       </div>
                     </div>
                   </div>
+                  <!-- [########## END ##########] -->
                 </div>
                 <div>
                   <div
-                    class="flex items-center justify-center gap-x-4 rounded-md bg-Alabaster p-3"
+                    class="flex items-center justify-center gap-x-4 rounded-md bg-Alabaster p-3 lg:block"
                   >
                     <button class="text-MarineBlue">Monthly</button>
                     <button
@@ -202,7 +223,7 @@
               <!--/ ####### END ######## / -->
 
               <!--/ ####### STEP 3 ######## / -->
-              <div class="invisible absolute top-0 w-full">
+              <div class="invisible absolute top-0 lg:w-full">
                 <header class="mb-6">
                   <h1 class="mb-1 text-3xl font-bold text-MarineBlue">
                     Pick add-ons
@@ -291,8 +312,9 @@
                 </div>
               </div>
               <!--/ ####### END ######## / -->
+
               <!--/ ####### STEP 4 ######## / -->
-              <div class="invisible absolute top-0 w-full">
+              <div class="invisible absolute top-0 lg:w-full">
                 <header class="mb-6">
                   <h1 class="mb-1 text-3xl font-bold text-MarineBlue">
                     Finishing up
@@ -332,7 +354,7 @@
               <!--/ ####### END ######## / -->
             </div>
             <div
-              class="grid w-full -translate-y-2 grid-flow-col place-content-between"
+              class="absolute bottom-0 z-10 flex w-full justify-between bg-white px-6 py-8 lg:static lg:grid lg:w-full lg:-translate-y-2 lg:grid-flow-col lg:place-content-between lg:px-0 lg:py-0"
             >
               <button
                 class="invisible font-semibold text-CoolGray transition-colors hover:text-MarineBlue"

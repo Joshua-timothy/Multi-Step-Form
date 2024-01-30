@@ -11,9 +11,18 @@
 }
 
 @layer utilities {
-  .s-bar {
-    background-image: url("../assets/images/bg-sidebar-desktop.svg");
-    background-size: cover;
+  @media (min-width: 1024px) {
+    .sb-desktop {
+      background-image: url("../assets/images/bg-sidebar-desktop.svg");
+      @apply bg-cover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sb-mobile {
+      background-image: url("../assets/images/bg-sidebar-mobile.svg");
+      @apply bg-cover;
+    }
   }
 
   #pao-checkbox:checked ~ .pao-checkbox {
